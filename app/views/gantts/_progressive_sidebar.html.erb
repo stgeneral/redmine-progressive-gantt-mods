@@ -1,0 +1,14 @@
+<%= form_tag({}, :method => :get) do %>
+<h3><%= l(:label_preferences) %></h3>
+<%= hidden_field_tag(:progressive, 1) %>
+<%= text_field_tag(:subject_width, progressive_setting(:subject_width), size: 5) %>px
+	<%= label_tag :subject_width, l(:setting_subject_width) %><br />
+<%= text_field_tag(:assignee_width, progressive_setting(:assignee_width), size: 5) %>px
+	<%= label_tag :assignee_width, l(:setting_assignee_width) %><br />
+<%= check_box_tag :show_assignees, 1, progressive_setting?(:show_assignees) %>
+	<%= label_tag :show_assignees, l(:setting_show_assignees) %><br />
+<%= check_box_tag :show_subject_lines, 1, progressive_setting?(:show_subject_lines) %>
+	<%= label_tag :show_subject_lines, l(:setting_show_subject_lines) %><br />
+
+<p><%= submit_tag l(:button_apply), :class => 'button-small', :name => nil %></p>
+<% end %>

@@ -1,0 +1,5 @@
+ru:
+  setting_show_subject_lines: Показывать заголовки в правой колонке
+  setting_show_assignees: Показывать колонку "Исполнитель"
+  setting_subject_width: Ширина колонки "Заголовки"
+  setting_assignee_width: Ширина колонки "Исполнитель"

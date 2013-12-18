@@ -2,8 +2,8 @@ Redmine::Plugin.register :progressive_gantt_mods do
   name 'Progressive Gantt Modifications'
   author 'Dmitry Babenko'
   description 'Assignee column and variable columns width'
-  version '0.0.1'
-  url ''
+  version '0.0.2'
+  url 'http://stgeneral.github.io/redmine-progressive-gantt-mods/'
   author_url 'https://github.com/stgeneral'
 
   settings :default => {
